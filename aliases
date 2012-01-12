@@ -1,4 +1,5 @@
 # Unix
+
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
@@ -10,15 +11,71 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
+alias ..="cd .."
+alias ~="cd ~"
+alias please="sudo"
+alias c="clear"
 
-# git
-alias g="git"
-alias gci="git pull --rebase && rake && git push"
+# Dirs
+
+alias dev="cd ~/Dropbox/My\ Docs/Development/"
+alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
+alias docs="cd ~/Documents/Gobhi_Documents/"
+alias dots="cd ~/dotfiles-1"
+alias desk="cd ~/Desktop"
+
+# TextMate
+
+alias et="mate"
+alias ett="mate ."
+
+# Git
+
+alias branch='git branch'
+alias commit='git commit -m'
+alias switch='git checkout'
+alias checkout='git checkout -b'
+alias g='git status'
+alias push='git push'
+alias pull='git pull'
+alias ga='git add'
+alias gas='git add . && git status'
+alias rebase='git rebase'
+alias clone='git clone'
+
+# Git clone from GitHub
+function gch() {
+  git clone git://github.com/$USER/$1.git
+}
+
+# Call from inside an initialized Git repo, with the name of the repo.
+function new-git() {
+  ssh git@example.com "mkdir $1.git && cd $1.git && git --bare init"
+  git remote add origin git@example.com:$1.git
+  git push origin master
+  git config branch.master.remote origin
+  git config branch.master.merge refs/heads/master
+  git config push.default current
+}
+
+# Will return the current branch name.
+# Usage example: git pull origin $(current_branch).
+function current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
+
+# These aliases take advantage of the previous function.
+alias ggpull='git pull origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 
 # Ruby
+
 alias help-strftime='ruby ~/bin/help-strftime.rb'
 
 # Bundler
+
 alias b="bundle"
 alias be="bundle exec"
 alias bake="bundle exec rake"
@@ -26,27 +83,32 @@ alias s="bundle exec rspec"
 alias cuc="bundle exec cucumber"
 
 # Rubygems
+
 alias gi="gem install"
 alias giv="gem install -v"
 
 # Rails
+
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:migrate db:migrate:redo db:schema:dump db:test:prepare"
 alias remongrate="bundle exec rake mongoid:migrate mongoid:migrate:redo"
 
 # Heroku staging
+
 alias staging='heroku run console --remote staging'
 alias staging-process='watch heroku ps --remote staging'
 alias staging-releases='heroku releases --remote staging'
 alias staging-tail='heroku logs --tail --remote staging'
 
 # Heroku production
+
 alias production='heroku run console --remote production'
 alias production-process='watch heroku ps --remote production'
 alias production-releases='heroku releases --remote production'
 alias production-tail='heroku logs --tail --remote production'
 
 # Heroku databases
+
 alias db-pull-staging='heroku db:pull --remote staging --confirm `basename $PWD`-staging'
 alias db-pull-production='heroku db:pull --remote production --confirm `basename $PWD`-production'
 alias db-copy-production-to-staging='heroku pgbackups:restore DATABASE `heroku pgbackups:url --remote production` --remote staging  --confirm `basename $PWD`-staging'
