@@ -15,11 +15,13 @@ alias ..="cd .."
 alias ~="cd ~"
 alias please="sudo"
 alias c="clear"
+alias reload="source ~/.zshrc"
 
 # Dirs
 
 alias dev="cd ~/Dropbox/My\ Docs/Development/"
 alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
+alias dox="cd ~/Dropbox/My\ Docs/Development/Doximity/"
 alias docs="cd ~/Documents/Gobhi_Documents/"
 alias dots="cd ~/dotfiles-1"
 alias desk="cd ~/Desktop"
