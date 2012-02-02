@@ -17,6 +17,12 @@ alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
 
+# URLs
+
+alias fb="open http://www.facebook.com"
+alias ghub="open http://www.github.com"
+alias hnews="open http://news.ycombinator.com"
+
 # Dirs
 
 alias dev="cd ~/Dropbox/My\ Docs/Development/"
