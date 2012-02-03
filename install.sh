@@ -25,11 +25,10 @@ for name in *; do
   else
 	  if [ "$name" == 'bin' ]; then
 	    bin="$HOME/$name"
-		  if [ -n "$(grep "$cutstring" "$name")" ]; then
-        cp "$PWD/$name" "$bin"
-      else
-        ln -s "$PWD/$name" "$bin"
-      fi
+	    if [ -e "$bin" ]; then
+	      rm -rf "$bin"
+	    fi
+		  ln -s "$PWD/$name" "$bin"
     else
       if [ "$name" != 'install.sh' ]; then
         echo "Creating $target"
