@@ -24,7 +24,7 @@ for name in *; do
     fi
   else
 	  if [ "$name" == 'bin' ]; then
-	    bin="$HOME/$name"
+	    bin="$HOME/.$name"
 	    if [ -e "$bin" ]; then
 	      rm -rf "$bin"
 	    fi
