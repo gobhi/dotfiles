@@ -22,6 +22,7 @@ alias reload="source ~/.zshrc"
 alias fb="open http://www.facebook.com"
 alias ghub="open http://www.github.com"
 alias hnews="open http://news.ycombinator.com"
+alias dmail="open http://www.google.com/a/doximity.com"
 
 # Dirs
 
