@@ -17,13 +17,14 @@ alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
 
-# URLs
+# Open
 
 alias fb="open http://www.facebook.com"
 alias ghub="open http://www.github.com"
 alias hnews="open http://news.ycombinator.com"
 alias dmail="open http://www.google.com/a/doximity.com"
 alias mail="open http://gmail.com"
+alias piv="open https://www.pivotaltracker.com/dashboard"
 
 # Dirs
 
@@ -31,8 +32,8 @@ alias dev="cd ~/Dropbox/My\ Docs/Development/"
 alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
 alias dox="cd ~/Dropbox/My\ Docs/Development/Doximity/"
 alias docs="cd ~/Documents/Gobhi_Documents/"
-alias dots="cd ~/dotfiles-1"
 alias desk="cd ~/Desktop"
+alias dots="cd ~/dotfiles-1"
 
 # TextMate
 
