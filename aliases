@@ -33,7 +33,7 @@ alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
 alias dox="cd ~/Dropbox/My\ Docs/Development/Doximity/"
 alias docs="cd ~/Documents/Gobhi_Documents/"
 alias desk="cd ~/Desktop"
-alias dots="cd ~/dotfiles-1"
+alias dots="cd ~/dotfiles"
 
 # TextMate
 
