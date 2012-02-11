@@ -17,6 +17,9 @@ alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
 
+# Dox
+alias use-dox="rvm use 1.8.7@dox-gemset"
+
 # Open
 
 alias fb="open http://www.facebook.com"
