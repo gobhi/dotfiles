@@ -12,3 +12,4 @@ export EDITOR="mate -w"
 
 # RVM
 [[ -s '/Users/gobhi/.rvm/scripts/rvm' ]] && source '/Users/gobhi/.rvm/scripts/rvm'
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
