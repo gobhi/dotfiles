@@ -8,7 +8,7 @@ export PATH=$PATH:~/.bin
 export NODE_PATH="/usr/local/lib/node_modules"
 
 # Editor
-export EDITOR="mate -w"
+export EDITOR="subl -w"
 
 # RVM
 [[ -s '/Users/gobhi/.rvm/scripts/rvm' ]] && source '/Users/gobhi/.rvm/scripts/rvm'
