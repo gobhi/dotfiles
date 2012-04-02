@@ -40,8 +40,8 @@ alias dots="cd ~/dotfiles"
 
 # TextMate
 
-alias et="mate"
-alias ett="mate ."
+alias et="subl"
+alias ett="subl ."
 
 # Git
 
