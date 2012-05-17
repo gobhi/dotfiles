@@ -7,6 +7,9 @@ export PATH=$PATH:~/.bin
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
+export AWS_ACCESS_KEY=ipFwp9hzaKehx2ZnW38lDmM53C5croV8jMvlEjTg
+export AWS_KEY_ID=AKIAJJMUWAOIU4V4N3BA
+
 # Editor
 export EDITOR="subl -w"
 
