@@ -11,7 +11,8 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export EDITOR="subl -w"
 
 # RVM
-[[ -s '/Users/gobhi/.rvm/scripts/rvm' ]] && source '/Users/gobhi/.rvm/scripts/rvm'
+#[[ -s '/Users/gobhi/.rvm/scripts/rvm' ]] && source '/Users/gobhi/.rvm/scripts/rvm'
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
