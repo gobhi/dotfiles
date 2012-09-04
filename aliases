@@ -17,10 +17,6 @@ alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
 
-# Dox
-alias use-dox="rvm use ruby-1.8.7-p357@dox-gemset"
-# alias use-dox="rvm use ree-1.8.7-2012.01"
-
 # Open
 
 alias fb="open http://www.facebook.com"
@@ -34,7 +30,7 @@ alias piv="open https://www.pivotaltracker.com/dashboard"
 
 alias dev="cd ~/Dropbox/My\ Docs/Development/"
 alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
-alias dox="cd ~/Documents/Doximity/"
+alias dox="cd ~/Documents/Doximity/doximity"
 alias docs="cd ~/Documents/Gobhi_Documents/"
 alias desk="cd ~/Desktop"
 alias dots="cd ~/dotfiles"

@@ -5,3 +5,5 @@
 [user]
 	name = Gobhi Theivendran
 	email = gobhit@gmail.com
+[core]
+	excludesfile = /Users/gobhi/.gitignore
