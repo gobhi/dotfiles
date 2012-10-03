@@ -1,5 +1,7 @@
 source "$HOME/.aliases"
 
+autoload -U compinit && compinit
+
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/X11/bin:$PATH"
 
