@@ -31,6 +31,7 @@ alias piv="open https://www.pivotaltracker.com/dashboard"
 alias desk="cd ~/Desktop"
 alias dots="cd ~/src/dotfiles"
 alias src="cd ~/src"
+alias boxen="cd /opt/boxen/repo"
 
 # TextMate
 
