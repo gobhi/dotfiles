@@ -28,12 +28,9 @@ alias piv="open https://www.pivotaltracker.com/dashboard"
 
 # Dirs
 
-alias dev="cd ~/Dropbox/My\ Docs/Development/"
-alias projects="cd ~/Dropbox/My\ Docs/Development/Projects/"
-alias dox="cd ~/Documents/Doximity/doximity"
-alias docs="cd ~/Documents/Gobhi_Documents/"
 alias desk="cd ~/Desktop"
-alias dots="cd ~/dotfiles"
+alias dots="cd ~/src/dotfiles"
+alias src="cd ~/src"
 
 # TextMate
 

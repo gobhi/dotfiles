@@ -6,4 +6,10 @@
 	name = Gobhi Theivendran
 	email = gobhit@gmail.com
 [core]
-	excludesfile = /Users/gobhi/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https
