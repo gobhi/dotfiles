@@ -1,42 +1,22 @@
 # Unix
 
-alias tlf="tail -f"
-alias ln='ln -v'
-alias mkdir='mkdir -p'
-alias ...='../..'
 alias l='ls'
-alias ll='ls -al'
-alias lh='ls -Alh'
-alias -g G='| grep'
-alias -g M='| less'
-alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
 alias ..="cd .."
 alias ~="cd ~"
 alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
 
-# Open
-
-alias fb="open http://www.facebook.com"
-alias ghub="open http://www.github.com"
-alias hnews="open http://news.ycombinator.com"
-alias dmail="open http://www.google.com/a/doximity.com"
-alias mail="open http://gmail.com"
-alias piv="open https://www.pivotaltracker.com/dashboard"
-
 # Dirs
 
 alias desk="cd ~/Desktop"
 alias dots="cd ~/src/dotfiles"
 alias src="cd ~/src"
-alias boxen="cd /opt/boxen/repo"
 
 # TextMate
 
-alias et="subl"
-alias ett="subl ."
+alias et="sublime"
+alias ett="sublime ."
 
 # Git
 
@@ -64,18 +44,3 @@ alias ggpull='git pull origin $(current_branch)'
 alias ggpush='git push origin $(current_branch)'
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 
-# Bundler
-
-alias b="bundle"
-alias be="bundle exec"
-alias bake="bundle exec rake"
-alias s="bundle exec rspec"
-
-# Rubygems
-
-alias gi="gem install"
-alias giv="gem install -v"
-
-# Rails
-
-alias migrate="bundle exec rake db:migrate db:test:prepare"
