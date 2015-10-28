@@ -10,13 +10,8 @@ alias reload="source ~/.zshrc"
 # Dirs
 
 alias desk="cd ~/Desktop"
-alias dots="cd ~/src/dotfiles"
-alias src="cd ~/src"
-
-# TextMate
-
-alias et="sublime"
-alias ett="sublime ."
+alias dots="cd ~/projects/dotfiles"
+alias projects="cd ~/projects"
 
 # Git
 
