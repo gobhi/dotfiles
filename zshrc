@@ -10,3 +10,10 @@ export PATH=$PATH:~/.bin
 
 # Editor
 export EDITOR="subl -w"
+
+export PATH=~/.local/bin:$PATH
+
+export GOPATH=$HOME/projects/gocode
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
