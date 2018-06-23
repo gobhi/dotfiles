@@ -17,3 +17,8 @@ export GOPATH=$HOME/projects/gocode
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+source virtualenvwrapper.sh
+
+
+export CASSIUS_HOME=~/projects
+source $CASSIUS_HOME/cassius/scripts/docker-rails.sh
