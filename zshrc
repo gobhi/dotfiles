@@ -20,5 +20,5 @@ export PATH=$PATH:$GOROOT/bin
 source virtualenvwrapper.sh
 
 
-export CASSIUS_HOME=~/projects
+export CASSIUS_HOME=~/Documents/projects
 source $CASSIUS_HOME/cassius/scripts/docker-rails.sh
