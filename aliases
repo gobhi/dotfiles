@@ -6,12 +6,13 @@ alias ~="cd ~"
 alias please="sudo"
 alias c="clear"
 alias reload="source ~/.zshrc"
+alias subl="sublime"
 
 # Dirs
 
 alias desk="cd ~/Desktop"
-alias dots="cd ~/projects/dotfiles"
-alias projects="cd ~/projects"
+alias dots="cd ~/Documents/projects/dotfiles"
+alias projects="cd ~/Documents/projects"
 
 # Git
 
