@@ -22,3 +22,5 @@ source virtualenvwrapper.sh
 
 export CASSIUS_HOME=~/Documents/projects
 source $CASSIUS_HOME/cassius/scripts/docker-rails.sh
+
+eval "$(rbenv init -)"
