@@ -9,7 +9,7 @@ __git_files () {
 export PATH=$PATH:~/.bin
 
 # Editor
-export EDITOR="subl -w"
+export EDITOR="code"
 
 export PATH=~/.local/bin:$PATH
 
@@ -22,5 +22,8 @@ source virtualenvwrapper.sh
 
 export CASSIUS_HOME=~/Documents/projects
 source $CASSIUS_HOME/cassius/scripts/docker-rails.sh
+
+export PATH=/opt/homebrew/bin:$PATH
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
 
 eval "$(rbenv init -)"
