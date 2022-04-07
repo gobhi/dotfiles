@@ -34,8 +34,12 @@ for name in *; do
         echo "Creating $target"
         if [ -n "$(grep "$cutstring" "$name")" ]; then
           cp "$PWD/$name" "$target"
+          # The -X does a force - useful when iTerm not picking up changes.
+          # cp -X "$PWD/$name" "$target"
         else
           ln -s "$PWD/$name" "$target"
+          # The -f does a force - useful when iTerm not picking up changes.
+          # ln -s -f "$PWD/$name" "$target"
         fi
       fi
     fi
